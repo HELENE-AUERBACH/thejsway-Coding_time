@@ -1,0 +1,12 @@
+<!doctype html>
+<script>
+  let numberStr = prompt("Give a natural integer");
+  while (isNaN(parseInt(numberStr, 10))) {
+   numberStr = prompt("Give a natural integer");
+  }
+  const number = parseInt(numberStr, 10);
+  for (let i = number; i < number + 10; i++) {
+    console.log(`${i} is ${i % 2 === 0 ? "even" : "odd"}`);
+  }
+</script>
+</html>
