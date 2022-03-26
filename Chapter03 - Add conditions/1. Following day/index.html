@@ -1,0 +1,14 @@
+<!doctype html>
+<script>
+  const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  const dayName = prompt("Enter a day name:");
+  let followingDay;
+  if (dayName !== null && dayName.length > 0) {
+    const dayNameToFind = dayName.charAt(0).toUpperCase() + dayName.slice(1).toLowerCase();
+    if (days.includes(dayNameToFind)) {
+      followingDay = days[(days.indexOf(dayNameToFind) + 1) % days.length];
+    }
+  }
+  console.log(`The following day of ${dayName} is ${followingDay}`);
+</script>
+</html>
