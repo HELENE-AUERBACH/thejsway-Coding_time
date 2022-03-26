@@ -1,0 +1,9 @@
+<!doctype html>
+<script>
+  let nb1 = Number(prompt("Enter nb1:"));
+  let nb2 = Number(prompt("Enter nb2:"));
+  let comparisonResult = (isNaN(nb1) || isNaN(nb2)) ? "Comparison can't be processed" :
+    ((nb1 === nb2) ? `${nb1} equals to ${nb2}` : ((nb1 > nb2) ? `${nb1} is greater than ${nb2}` : `${nb1} is less than ${nb2}`));
+  console.log(comparisonResult);
+</script>
+</html>
