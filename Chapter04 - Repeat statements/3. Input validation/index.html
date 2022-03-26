@@ -1,0 +1,15 @@
+<!doctype html>
+<script>
+  let numberStr = prompt("Give a natural integer that is less than or equal to 100");
+  while (isNaN(parseInt(numberStr, 10)) || parseInt(numberStr, 10) > 100) {
+    numberStr = prompt("Give a natural integer that is less than or equal to 100");
+  }
+  alert(`OK, you entered the number ${parseInt(numberStr, 10)} that is less than or equal to 100`);
+
+  numberStr = prompt("Give a natural integer between 50 and 100");
+  while (isNaN(parseInt(numberStr, 10)) || parseInt(numberStr, 10) < 50 || parseInt(numberStr, 10) > 100) {
+    numberStr = prompt("Give a natural integer between 50 and 100");
+  }
+  alert(`OK, you entered the number ${parseInt(numberStr, 10)} that is between 50 and 100`);
+</script>
+</html>
