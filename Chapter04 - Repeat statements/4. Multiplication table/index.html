@@ -1,0 +1,21 @@
+<!doctype html>
+<script>
+  let numberStr = prompt("Give a natural integer");
+  while (isNaN(parseInt(numberStr, 10))) {
+    numberStr = prompt("Give a natural integer");
+  }
+  let number = parseInt(numberStr);
+  for (let i = 0; i <= 10; i++) {
+    console.log(`${i} * ${number} === ${i * number}`);
+  }
+
+  numberStr = prompt("Give a natural integer between 2 and 9");
+  while (isNaN(parseInt(numberStr, 10)) || parseInt(numberStr, 10) < 2 || parseInt(numberStr, 10) > 9) {
+    numberStr = prompt("Give a natural integer between 2 and 9");
+  }
+  number = parseInt(numberStr);
+  for (let i = 0; i <= 10; i++) {
+    console.log(`${i} * ${number} === ${i * number}`);
+  }
+</script>
+</html>
