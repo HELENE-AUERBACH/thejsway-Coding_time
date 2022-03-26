@@ -1,0 +1,11 @@
+<!doctype html>
+<script>
+  let text = prompt("Give a phrase");
+  while (text === null
+    || text.trim().length === 0
+    || !(text.trim().toLowerCase().includes("yes") || text.trim().toLowerCase().includes("no"))) {
+    text = prompt("Give a phrase");
+  }
+  alert(`NOK, you entered the phrase "${text}" which contains ${text.trim().toLowerCase().includes("yes") ? "yes" : "no"}`);
+</script>
+</html>
