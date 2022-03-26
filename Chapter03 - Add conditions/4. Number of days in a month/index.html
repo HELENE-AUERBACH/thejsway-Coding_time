@@ -1,0 +1,60 @@
+<!doctype html>
+<script>
+  let monthNumber = parseInt(prompt("Enter month number:"));
+  let daysNumberForMonth;
+  let monthName;
+
+  if (!isNaN(monthNumber) && monthNumber >= 1 && monthNumber <= 12) {
+    switch (monthNumber) {
+      case 1:
+      case 3:
+      case 5:
+      case 7:
+      case 8:
+      case 10:
+      case 12:
+        daysNumberForMonth = 31;
+        break;
+      case 2:
+        daysNumberForMonth = 28;
+        break;
+      default:
+        daysNumberForMonth = 30;
+        break;
+    }
+
+    const getMonthName = (monthNumber) => {
+      switch (monthNumber) {
+        case 1:
+          return'January';
+        case 2:
+          return 'February';
+        case 3:
+          return 'March';
+        case 4:
+          return 'April';
+        case 5:
+          return 'May';
+        case 6:
+          return 'June';
+        case 7:
+          return 'July';
+        case 8:
+          return 'August';
+        case 9:
+          return 'September';
+        case 10:
+          return 'October';
+        case 11:
+          return 'November';
+        case 12:
+          return 'December';
+        default:
+          return null;
+      }
+    };
+    monthName = getMonthName(monthNumber);
+  }
+  console.log(`Month of ${monthName} (${monthNumber}) has ${daysNumberForMonth} days`);
+</script>
+</html>
