@@ -1,0 +1,30 @@
+<!doctype html>
+<script>
+  let hours = parseInt(prompt("Enter hours:"));
+  let minutes = parseInt(prompt("Enter minutes:"));
+  let seconds = parseInt(prompt("Enter seconds:"));
+
+  let hoursForFollowingSecond;
+  let minutesForFollowingSecond;
+  let secondsForFollowingSecond;
+
+  if (!isNaN(hours) && !isNaN(minutes) && !isNaN(seconds)
+    && hours >= 0 && hours <= 23 && minutes >= 0 && minutes <= 59 && seconds >= 0 && seconds <= 59) {
+    
+    hoursForFollowingSecond = hours;
+    minutesForFollowingSecond = minutes;
+    secondsForFollowingSecond = seconds;
+    
+    secondsForFollowingSecond = (seconds + 1) % 60;
+    
+    if (seconds === 59) {
+      minutesForFollowingSecond = (minutes + 1) % 60;
+      
+      if (minutes === 59) {
+        hoursForFollowingSecond = (hours + 1) % 24;
+      }
+    }
+  }
+  console.log(`${hours}h${minutes}m${seconds}s => ${hoursForFollowingSecond}h${minutesForFollowingSecond}m${secondsForFollowingSecond}s`);
+</script>
+</html>
