@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS Exercises</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="JS Exercises" />
+    <meta name="keywords" content="HTML, CSS, JS" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <article>
+        <h2>Calculator</h2>
+        <form action="#">
+          <label for="inputCalculatorOperand1">Input a first operand</label>
+          <input id="inputCalculatorOperand1" type="float" />
+          <label for="calculatorRadioGroup">Choose the operator</label>
+          <fieldset id="calculatorRadioGroup">
+            <label for="calculatorPlusOperator">+</label>
+            <input
+              type="radio"
+              value="+"
+              id="calculatorPlusOperator"
+              name="calculatorRadioGroup"
+            />
+            <label for="calculatorMinusOperator">-</label>
+            <input
+              type="radio"
+              value="-"
+              id="calculatorMinusOperator"
+              name="calculatorRadioGroup"
+            />
+            <label for="calculatorMultiplicationOperator">*</label>
+            <input
+              type="radio"
+              value="*"
+              id="calculatorMultiplicationOperator"
+              name="calculatorRadioGroup"
+            />
+            <label for="calculatorDivisionOperator">/</label>
+            <input
+              type="radio"
+              value="/"
+              id="calculatorDivisionOperator"
+              name="calculatorRadioGroup"
+            />
+          </fieldset>
+          <label for="inputCalculatorOperand2">Input a second operand</label>
+          <input id="inputCalculatorOperand2" type="float" />
+          <input
+            id="btnCalculatorSubmit"
+            type="submit"
+            value="Submit"
+            class="submit"
+          />
+        </form>
+        <p id="calculatorResult"></p>
+      </article>
+    </main>
+
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
