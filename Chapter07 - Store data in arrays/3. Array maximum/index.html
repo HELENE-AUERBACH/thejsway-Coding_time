@@ -1,0 +1,12 @@
+<!doctype html>
+<script>
+  const values2 = [3, 11, 7, 2, 9, 10];
+  let values2MaximumValue;
+  for (const value of values2) {
+    if (value >= (values2MaximumValue || value)) {
+      values2MaximumValue = value;
+    }
+  }
+  console.log(values2MaximumValue);
+</script>
+</html>
