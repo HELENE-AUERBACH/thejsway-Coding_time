@@ -1,0 +1,15 @@
+<!doctype html>
+<script>
+  let word;
+  let words = [];
+  while (word === undefined || word === null || word.length === 0 || word.trim().toLowerCase() !== "stop") {
+    word = prompt('Give a word ("stop" to stop)');
+    if (word !== null && word.length > 0 && word.trim().toLowerCase() !== "stop") {
+      words.push(word);
+    }
+  }
+  for (word of words) {
+    console.log(word);
+  }
+</script>
+</html>
