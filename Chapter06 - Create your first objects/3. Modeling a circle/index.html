@@ -1,0 +1,28 @@
+<!doctype html>
+<script>
+  function calculateCircleCircumference(radius) {
+    return 2 * Math.PI * radius;
+  }
+
+  function calculateCircleArea(radius) {
+    return Math.PI * radius ** 2;
+  }
+
+  const r = Number(prompt("Enter the circle radius:"));
+
+  const circle = {
+    radius: r,
+
+    circumference() {
+      return calculateCircleCircumference(this.radius)
+    },
+
+    area() {
+      return calculateCircleArea(this.radius)
+    }
+  };
+
+  console.log(`Its circumference is ${circle.circumference()}`);
+  console.log(`Its area is ${circle.area()}`);
+</script>
+</html>
