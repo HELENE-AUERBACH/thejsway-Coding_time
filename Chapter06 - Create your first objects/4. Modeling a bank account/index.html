@@ -1,0 +1,24 @@
+<!doctype html>
+<script>
+  const account = {
+    name: "Alex",
+    balance: 0,
+
+    // Adding the (positive or negative) value passed as an argument to the account balance
+    credit(value) {
+      this.balance += value;
+    },
+
+    // Return the account description
+    describe() {
+      return `owner: ${this.name}, balance ${this.balance}`;
+    }
+  };
+
+  console.log(account.describe());
+  // crediting 250, debiting 80
+  account.credit(250);
+  account.credit(-80);
+  console.log(account.describe());
+</script>
+</html>
